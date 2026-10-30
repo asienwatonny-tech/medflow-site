@@ -1,0 +1,121 @@
+/* House style — main #0F6E78 ground #F4F9FA ink #1F2A30 accent #E8A33D
+   headings: Lora, serif   body: Inter, sans-serif */
+
+/* 1 · house style */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #F4F9FA;
+  color: #1F2A30;
+  font-family: Inter, sans-serif;
+  line-height: 1.65;
+}
+h1, h2, h3 { font-family: Lora, serif; color: #0F6E78; line-height: 1.25; }
+h2 { margin-top: 2rem; }
+a { color: #0F6E78; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid #E8A33D;
+  outline-offset: 2px;
+}
+header { grid-area: header; background: #0F6E78; color: #F4F9FA; padding: 1.25rem 1.5rem; }
+header h1 { color: #F4F9FA; margin: 0; font-size: 2rem; }
+header p { margin: 0.25rem 0 0; }
+footer { grid-area: footer; background: #0F6E78; color: #F4F9FA; padding: 1.25rem 1.5rem; }
+footer p { margin: 0.2rem 0; }
+img, input, select, textarea { max-width: 100%; }
+
+/* 2 · layout */
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  grid-template-areas:
+    "header header"
+    "nav    nav"
+    "main   aside"
+    "footer footer";
+}
+nav { grid-area: nav; background: #1F2A30; position: sticky; top: 0; z-index: 10; }
+nav ul { display: flex; list-style: none; margin: 0; padding: 0; }
+nav a {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  color: #F4F9FA;
+  text-decoration: none;
+}
+nav a:hover, nav a[aria-current="page"] { background: #E8A33D; color: #1F2A30; }
+main { grid-area: main; padding: 1.5rem 2rem 2.5rem; max-width: 60rem; }
+main h1 { margin-top: 0; }
+aside {
+  grid-area: aside;
+  padding: 1.5rem;
+  border-left: 4px solid #E8A33D;
+}
+aside h2 { margin-top: 0; font-size: 1.25rem; }
+.cards { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+.card {
+  flex: 1 1 14rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #0F6E78;
+  border-top: 5px solid #E8A33D;
+}
+.card h3 { margin-top: 0; }
+.table-scroll { overflow-x: auto; margin: 1rem 0; }
+
+/* 3 · track-queue.html — journey table and status badges */
+.journey { border-collapse: collapse; width: 100%; min-width: 34rem; }
+.journey caption { text-align: left; font-weight: 600; padding-bottom: 0.5rem; }
+.journey th, .journey td { border: 1px solid #0F6E78; padding: 0.6rem 0.8rem; text-align: left; }
+.journey thead th { background: #0F6E78; color: #F4F9FA; }
+.badge { display: inline-block; padding: 0.1rem 0.7rem; border: 1px solid #0F6E78; }
+.badge-done { background: #0F6E78; color: #F4F9FA; }
+.badge-now { background: #E8A33D; color: #1F2A30; border-color: #E8A33D; font-weight: 600; }
+.badge-pending { background: #F4F9FA; color: #1F2A30; }
+.patient-summary { padding: 1rem 1.25rem; border: 1px solid #0F6E78; border-left: 5px solid #0F6E78; }
+.patient-summary p { margin: 0.2rem 0; }
+
+/* 4 · contact.html, faq.html, how-it-works.html — form, details, steps */
+form { display: grid; gap: 0.9rem; max-width: 34rem; }
+label { font-weight: 600; display: block; margin-bottom: 0.25rem; }
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #1F2A30;
+  background: #F4F9FA;
+  color: #1F2A30;
+  font: inherit;
+}
+button {
+  justify-self: start;
+  padding: 0.7rem 1.4rem;
+  border: 0;
+  background: #0F6E78;
+  color: #F4F9FA;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover { background: #E8A33D; color: #1F2A30; }
+details { border: 1px solid #0F6E78; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+summary { cursor: pointer; font-weight: 600; color: #0F6E78; }
+.steps { padding-left: 1.4rem; }
+.steps li { margin: 0 0 1rem; padding-left: 0.4rem; }
+.steps li::marker { font-family: Lora, serif; font-weight: 700; color: #0F6E78; }
+.lead { font-size: 1.15rem; }
+
+/* 5 · phone — keep this last */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+  nav { position: static; }
+  nav ul { flex-wrap: wrap; }
+  main { padding: 1.25rem 1rem 2rem; }
+  aside { border-left: 0; border-top: 4px solid #E8A33D; }
+}
