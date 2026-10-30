@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works – MedFlow</title>
+  <meta name="description" content="MedFlow is a web-based patient queue and journey tracking system for outpatient hospital visits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lora:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>MedFlow</h1>
+    <p>Smarter patient flow, better healthcare</p>
+  </header>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
+      <li><a href="track-queue.html">Track queue</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>How a visit moves through MedFlow</h1>
+    <p class="lead">Every outpatient visit follows the same six stages. At each one, a member of staff updates your status, and MedFlow refreshes your position and waiting time.</p>
+
+    <ol class="steps">
+      <li><strong>Registration.</strong> The receptionist registers you and creates your visit record. You receive a queue ID, such as Q-2481, that you will use to follow your progress.</li>
+      <li><strong>Nurse or triage.</strong> A nurse carries out the first assessment and marks it complete, which moves you on to the next stage.</li>
+      <li><strong>Doctor consultation.</strong> You wait with a position in the doctor’s queue. The doctor marks the consultation complete when you are done.</li>
+      <li><strong>Laboratory.</strong> If the doctor requests tests, laboratory staff update your status as samples are taken and processed. If no tests are needed, this stage is skipped.</li>
+      <li><strong>Results.</strong> Your results are returned to the doctor for review before you continue.</li>
+      <li><strong>Pharmacy.</strong> Pharmacy staff mark your visit complete when you have collected your medication.</li>
+    </ol>
+
+    <h2>How the waiting-time estimate works</h2>
+    <p>For the stage you are in, MedFlow looks at how many patients are ahead of you and how long that stage normally takes. It then adds the typical time for each stage still to come to give an estimated remaining journey time. Whenever staff update a status, the estimate is recalculated, so it keeps changing as the day goes on.</p>
+    <p>The numbers are approximate. Emergencies, staffing and workload can all change real service times.</p>
+
+  </main>
+  <aside>
+    <h2>Skipped stages</h2>
+    <p>Not every patient needs a laboratory test. Stages that do not apply to you are left out of your journey and of your time estimate.</p>
+    <h2>Need to step out?</h2>
+    <p>Check <a href="track-queue.html">your queue status</a> from a phone and return when your turn is near.</p>
+
+  </aside>
+  <footer>
+    <p>MedFlow – Hospital Patient Queue Management and Journey Tracking System</p>
+    <p>School of Computing and Engineering Sciences, Strathmore University, Nairobi, Kenya. Prototype for academic purposes, 2026.</p>
+  </footer>
+</body>
+</html>

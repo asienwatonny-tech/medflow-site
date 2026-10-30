@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – MedFlow</title>
+  <meta name="description" content="MedFlow is a web-based patient queue and journey tracking system for outpatient hospital visits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lora:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>MedFlow</h1>
+    <p>Smarter patient flow, better healthcare</p>
+  </header>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="track-queue.html">Track queue</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Contact the MedFlow team</h1>
+    <p>Send a question or comment about the project. This form is part of the prototype and does not send messages yet.</p>
+
+    <form>
+      <div>
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+      <div>
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+      </div>
+      <div>
+        <label for="topic">What is it about?</label>
+        <select id="topic" name="topic">
+          <option>A question about MedFlow</option>
+          <option>Feedback on the design</option>
+          <option>A suggestion for a feature</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+      </div>
+      <button type="button">Send message</button>
+    </form>
+
+    <h2>Where we are</h2>
+    <p>School of Computing and Engineering Sciences<br>Strathmore University<br>Nairobi, Kenya</p>
+
+  </main>
+  <aside>
+    <h2>Please note</h2>
+    <p>Do not include medical details or personal health information in a message. MedFlow is a student prototype and is not a clinical service.</p>
+    <p>If you are unwell, speak to a health professional or visit your nearest hospital.</p>
+
+  </aside>
+  <footer>
+    <p>MedFlow – Hospital Patient Queue Management and Journey Tracking System</p>
+    <p>School of Computing and Engineering Sciences, Strathmore University, Nairobi, Kenya. Prototype for academic purposes, 2026.</p>
+  </footer>
+</body>
+</html>

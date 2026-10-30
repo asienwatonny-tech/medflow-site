@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track queue – MedFlow</title>
+  <meta name="description" content="MedFlow is a web-based patient queue and journey tracking system for outpatient hospital visits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lora:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>MedFlow</h1>
+    <p>Smarter patient flow, better healthcare</p>
+  </header>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="track-queue.html" aria-current="page">Track queue</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Track your queue</h1>
+    <p>This is an example of the page a patient sees after registration. The patient here is fictional, and the figures illustrate how MedFlow reports progress.</p>
+
+    <div class="patient-summary">
+      <p><strong>Patient:</strong> John</p>
+      <p><strong>Queue ID:</strong> Q-2481</p>
+      <p><strong>Current stage:</strong> Doctor</p>
+      <p><strong>Estimated remaining time:</strong> about 1 hour 55 minutes</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="journey">
+        <caption>Journey progress for queue ID Q-2481</caption>
+        <thead>
+          <tr><th scope="col">Service stage</th><th scope="col">Status</th><th scope="col">Information</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Registration</th><td><span class="badge badge-done">Completed</span></td><td>Done</td></tr>
+          <tr><th scope="row">Nurse or triage</th><td><span class="badge badge-done">Completed</span></td><td>Done</td></tr>
+          <tr><th scope="row">Doctor</th><td><span class="badge badge-now">Waiting</span></td><td>6 patients ahead, about 35 minutes</td></tr>
+          <tr><th scope="row">Laboratory</th><td><span class="badge badge-pending">Pending</span></td><td>About 15 minutes</td></tr>
+          <tr><th scope="row">Results</th><td><span class="badge badge-pending">Pending</span></td><td>About 45 minutes</td></tr>
+          <tr><th scope="row">Pharmacy</th><td><span class="badge badge-pending">Pending</span></td><td>About 20 minutes</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The remaining time adds the waits for the four stages still to come: 35 + 15 + 45 + 20 minutes. When staff move you to the next stage, this page updates.</p>
+
+  </main>
+  <aside>
+    <h2>Reading this page</h2>
+    <p><strong>Completed:</strong> you have finished this stage.</p>
+    <p><strong>Waiting:</strong> the stage you are in now.</p>
+    <p><strong>Pending:</strong> stages still to come.</p>
+    <p>All times are estimates, not guarantees.</p>
+
+  </aside>
+  <footer>
+    <p>MedFlow – Hospital Patient Queue Management and Journey Tracking System</p>
+    <p>School of Computing and Engineering Sciences, Strathmore University, Nairobi, Kenya. Prototype for academic purposes, 2026.</p>
+  </footer>
+</body>
+</html>

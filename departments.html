@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Departments – MedFlow</title>
+  <meta name="description" content="MedFlow is a web-based patient queue and journey tracking system for outpatient hospital visits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lora:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>MedFlow</h1>
+    <p>Smarter patient flow, better healthcare</p>
+  </header>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="track-queue.html">Track queue</a></li>
+      <li><a href="departments.html" aria-current="page">Departments</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Departments and roles</h1>
+    <p>Each member of staff sees only the functions that belong to their role. Patients see their own queue status and nothing else.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Reception</h3>
+        <p>Registers patients, creates the visit record and issues the queue ID.</p>
+      </div>
+      <div class="card">
+        <h3>Nurse and triage</h3>
+        <p>Records that the first assessment is complete and moves the patient on.</p>
+      </div>
+      <div class="card">
+        <h3>Doctor</h3>
+        <p>Updates the consultation status and marks when the patient has finished the doctor stage.</p>
+      </div>
+      <div class="card">
+        <h3>Laboratory</h3>
+        <p>Updates the status of tests for patients the doctor has sent to the laboratory.</p>
+      </div>
+      <div class="card">
+        <h3>Pharmacy</h3>
+        <p>Marks the visit complete once medication has been collected.</p>
+      </div>
+      <div class="card">
+        <h3>Administration</h3>
+        <p>Manages users and roles, and produces reports on queues, waiting times and service performance.</p>
+      </div>
+    </div>
+
+    <h2>Reports for hospital management</h2>
+    <p>Administrators can see the number of patients processed in a period, the average wait at each stage, how many patients are waiting now, which stages have the longest queues, and how many journeys are complete or still pending. These help management decide on staffing and resources.</p>
+
+  </main>
+  <aside>
+    <h2>Privacy and access</h2>
+    <p>Staff must sign in, and each role is limited to its own functions. Passwords are stored securely, never as plain text.</p>
+    <p>The patient page shows queue information only. It does not show clinical records.</p>
+
+  </aside>
+  <footer>
+    <p>MedFlow – Hospital Patient Queue Management and Journey Tracking System</p>
+    <p>School of Computing and Engineering Sciences, Strathmore University, Nairobi, Kenya. Prototype for academic purposes, 2026.</p>
+  </footer>
+</body>
+</html>
